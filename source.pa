@@ -1,0 +1,9 @@
+func main:
+    c: int -> 5
+    d: let -> "hello"
+    if c = 5:
+        print c
+    end
+    print d
+    add: int -> c + 10
+    print add

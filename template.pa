@@ -1,0 +1,51 @@
+x: int -> 10
+
+func math:
+    a: input -> "Enter first number:"
+    b: input -> "Enter second number:"
+    operator: input -> "Enter operator (+, -, *, /):"
+
+    match operator:
+        +: int -> a + b
+        -: int -> a - b
+        *: int -> a * b
+        /: int -> a / b
+        _: print -> "Use correct operator"
+    end
+
+
+func main:
+    c: int -> 5
+    d: let -> "hello"
+    if c = 5:
+        print c
+    end
+    print d
+    add: int -> c + 10
+    print add
+
+func ao:
+  a: int -> 10
+  b: int -> 5
+  c: int -> 2
+  result: int -> (a + b) * c + (2 * c / b)
+print result
+
+
+
+
+func main:
+a: input -> "liczba pixeli:"
+b: input -> "rozdzielczosc x:"
+c: input -> "rodzielczosc y:"
+
+d: int -> b * c
+
+e: int -> a / d
+f: sqrt -> e
+
+g: int -> b * f
+h: int -> c * f
+
+print g
+print h
